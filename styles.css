@@ -18,7 +18,7 @@ nav{
     background: grey;
     /* height: 60px; */
     text-align: center;
-    font-family:
+    font-family: font-family: 'Open Sans', sans-serif;
 }
 nav a{
     text-align: center;
@@ -27,39 +27,40 @@ nav a{
     padding: 5px;
     margin: 10px;
 }
-.flexbox{
+main{
+    margin: 20px auto;
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
+        /* flex-direction: row; */
 }
 .flexItem{
     flex-basis: 300px;
     flex-grow: 2;
     margin: 2px;
+    background: yellow;
+    padding: 30px;
+}
+img{
+    width: 100%
+    display: block;
+    margin: 1% auto;
 }
 
 
-
+/* medium styles below */
 @media screen and (min-width: 700px) {
-        .flexItem{
-            height:400px;
-        }
+
         img{
             width:30%;
             display: inline;
 
         }
-        .vertical{
-            width:10%;
-        }
+
 }
 
-
+/* large screen styles below */
 @media screen and (min-width: 1300px) {
-    flexItem{
-        flex-basis: 30%;
-    }
-    .vertical{
-        width: 30%;
-    }
+        img{
+
+        }
 }
